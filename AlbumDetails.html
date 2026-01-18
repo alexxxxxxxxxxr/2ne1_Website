@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="2ne1Style.css">
+
+  <title>Album Details | 2NE1</title>
+</head>
+
+<body class="other-page">
+    <!--Header and Navigation Section-->
+    <header class="header">
+        <div class="container">
+        <div class="banner_head">
+            <h1>2NE1</h1>
+            <ul class="banner_subhead">
+                <li><p>Dara</p></li>
+                <li><p>CL</p></li>
+                <li><p>Bom</p></li>
+                <li><p>Minzy</p></li>
+            </ul> 
+        </div>
+        <div class="header_nav">
+            <nav>
+                <ul class="header_nav_content">
+                    <li><a href="index.html">DISCOGRAPHY</a></li>
+                    <li><a href="MembersPage.html">MEMBERS</a></li>
+                    <li><a href="EventsPage.html">EVENTS</a></li>
+                    <li><a href="ContactPage.html">CONTACTS</a></li>
+                </ul>
+            </nav>
+        </div>
+        </div>
+    </header>
+
+    <!-- Album Header -->
+    <section class="album_details_header">
+        <div class="container">
+            <a href="index.html" class="back_button">
+                <i class="fa-solid fa-arrow-left"></i> BACK TO DISCOGRAPHY
+            </a>
+            <div class="album_details_content">
+                <div class="album_details_image">
+                    <img id="albumCover" src="" alt="Album Cover">
+                </div>
+                <div class="album_details_info">
+                    <h1 id="albumTitle">Album Title</h1>
+                    <div class="album_meta">
+                        <p><strong>Type:</strong> <span id="albumType"></span></p>
+                        <p><strong>Tracks:</strong> <span id="albumTracks"></span></p>
+                        <p><strong>Released:</strong> <span id="albumYear"></span></p>
+                        <p><strong>Label:</strong> YG Entertainment</p>
+                    </div>
+                    <div class="album_platforms">
+                        <h3>LISTEN NOW</h3>
+                        <div class="platform_links">
+                            <a href="#" id="spotifyLink" target="_blank" class="platform_badge">
+                                <i class="fa-brands fa-spotify"></i>
+                                <span>Spotify</span>
+                            </a>
+                            <a href="#" id="youtubeLink" target="_blank" class="platform_badge">
+                                <i class="fa-brands fa-youtube"></i>
+                                <span>YouTube</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tracklist Section -->
+    <section class="album_tracklist_section">
+        <div class="container">
+            <div class="tracklist_header">
+                <h3>TRACKLIST</h3>
+            </div>
+            <div id="tracklistContainer" class="tracklist_grid">
+            </div>
+        </div>
+    </section>
+
+    <!-- Music Videos Section -->
+    <section class="album_videos_section">
+        <div class="container">
+            <div class="videos_header">
+                <h3>FEATURED MUSIC VIDEOS</h3>
+            </div>
+            <div id="videosContainer" class="videos_grid">
+            </div>
+        </div>
+    </section>
+
+    <!-- Fun Fact CTA Section -->
+    <section class="funfact_cta">
+        <div class="container">
+            <div class="funfact_content">
+                <h3>DID YOU KNOW?</h3>
+                <p id="funfact_text"></p>
+                <a href="#" id="funfact_cta" class="funfact_button"></a>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="footer">
+        <div class="footer_container">
+            <p class="footer_title">© 2025 | 2NE1 Fan Archive</p>
+            <p class="footer_disclaimer">Fan-made tribute • Not affiliated with YG Entertainment</p>
+        </div>
+    </footer>
+
+    <script src="AlbumDetails.js" defer></script>
+    <script src="Script.js" defer></script>
+</body>
+</html>
