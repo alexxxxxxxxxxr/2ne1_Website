@@ -14,18 +14,12 @@
   <title>Album Details | 2NE1</title>
 </head>
 
-<body class="other-page">
+<body class="other-page album-details-page">
     <!--Header and Navigation Section-->
     <header class="header">
         <div class="container">
         <div class="banner_head">
             <h1>2NE1</h1>
-            <ul class="banner_subhead">
-                <li><p>Dara</p></li>
-                <li><p>CL</p></li>
-                <li><p>Bom</p></li>
-                <li><p>Minzy</p></li>
-            </ul> 
         </div>
         <div class="header_nav">
             <nav>
@@ -46,18 +40,54 @@
             <a href="index.html" class="back_button">
                 <i class="fa-solid fa-arrow-left"></i> BACK TO DISCOGRAPHY
             </a>
+            
             <div class="album_details_content">
                 <div class="album_details_image">
                     <img id="albumCover" src="" alt="Album Cover">
                 </div>
+                
                 <div class="album_details_info">
                     <h1 id="albumTitle">Album Title</h1>
+                    
+                    <p id="albumDescription" class="album_description"></p>
+                    
                     <div class="album_meta">
-                        <p><strong>Type:</strong> <span id="albumType"></span></p>
-                        <p><strong>Tracks:</strong> <span id="albumTracks"></span></p>
-                        <p><strong>Released:</strong> <span id="albumYear"></span></p>
-                        <p><strong>Label:</strong> YG Entertainment</p>
+                        <div class="album_meta_item">
+                            <span class="album_meta_label">Type</span>
+                            <span class="album_meta_value" id="albumType"></span>
+                        </div>
+                        
+                        <div class="album_meta_item">
+                            <span class="album_meta_label">Released</span>
+                            <span class="album_meta_value" id="albumYear"></span>
+                        </div>
+                        
+                        <div class="album_meta_item">
+                            <span class="album_meta_label">Tracks</span>
+                            <span class="album_meta_value" id="albumTracks"></span>
+                        </div>
+                        
+                        <div class="album_meta_item">
+                            <span class="album_meta_label">Duration</span>
+                            <span class="album_meta_value" id="albumDuration"></span>
+                        </div>
+                        
+                        <div class="album_meta_item">
+                            <span class="album_meta_label">Producers</span>
+                            <span class="album_meta_value" id="albumProducers"></span>
+                        </div>
+                        
+                        <div class="album_meta_item">
+                            <span class="album_meta_label">Label</span>
+                            <span class="album_meta_value" id="albumLabel"></span>
+                        </div>
+                        
+                        <div class="album_meta_item album_meta_full">
+                            <span class="album_meta_label">Genre</span>
+                            <span class="album_meta_value" id="albumGenre"></span>
+                        </div>
                     </div>
+                    
                     <div class="album_platforms">
                         <h3>LISTEN NOW</h3>
                         <div class="platform_links">
@@ -82,8 +112,7 @@
             <div class="tracklist_header">
                 <h3>TRACKLIST</h3>
             </div>
-            <div id="tracklistContainer" class="tracklist_grid">
-            </div>
+            <div id="tracklistContainer" class="simple_tracklist"></div>
         </div>
     </section>
 
@@ -94,17 +123,6 @@
                 <h3>FEATURED MUSIC VIDEOS</h3>
             </div>
             <div id="videosContainer" class="videos_grid">
-            </div>
-        </div>
-    </section>
-
-    <!-- Fun Fact CTA Section -->
-    <section class="funfact_cta">
-        <div class="container">
-            <div class="funfact_content">
-                <h3>DID YOU KNOW?</h3>
-                <p id="funfact_text"></p>
-                <a href="#" id="funfact_cta" class="funfact_button"></a>
             </div>
         </div>
     </section>
