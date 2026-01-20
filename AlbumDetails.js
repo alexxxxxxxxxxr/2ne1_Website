@@ -411,6 +411,15 @@ if (albumId && albumDatabase[albumId]) {
     document.getElementById('albumTracks').textContent = album.tracks;
     document.getElementById('albumYear').textContent = album.year;
     
+    const totalMinutes = album.tracklist.reduce((total, track) => {
+        const [mins, secs] = track.duration.split(':').map(Number);
+        return total + mins + (secs / 60);
+    }, 0);
+    const hours = Math.floor(totalMinutes / 60);
+    const minutes = Math.round(totalMinutes % 60);
+    const durationText = hours > 0 ? `${hours}h ${minutes}m` : `${minutes} min`;
+    document.getElementById('albumDuration').textContent = durationText;
+    
     if (album.description) {
         document.getElementById('albumDescription').textContent = album.description;
     }
